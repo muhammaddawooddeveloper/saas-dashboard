@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS - SaaS Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+       <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>TailAdmin</span>
+                </div>
+                <button class="sidebar-toggle d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-menu">
+                    <h6 class="menu-title">MENU</h6>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-th"></i></span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="ecommerce.html">eCommerce</a></li>
+                                <li><a href="analytics.html">Analytics</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="marketing.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                                <span class="text">Marketing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="crm.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-users"></i></span>
+                                <span class="text">CRM</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="stocks.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                                <span class="text">Stocks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="saas.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-cloud"></i></span>
+                                <span class="text">SaaS</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="logistics.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-truck"></i></span>
+                                <span class="text">Logistics</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ai-assistant.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-brain"></i></span>
+                                <span class="text">AI Assistant</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ecommerce-advanced.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="text">E-commerce</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calendar.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-calendar"></i></span>
+                                <span class="text">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="user-profile.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-user"></i></span>
+                                <span class="text">User Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle d-lg-none"><i class="fas fa-bars"></i></button>
+                    <div class="search-box"><input type="text" placeholder="Search SaaS metrics..." class="form-control"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="header-right">
+                    <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                    <button class="notification-btn"><i class="fas fa-bell"></i><span class="notification-badge">5</span></button>
+                    <div class="user-profile"><img src="https://i.pravatar.cc/150?img=12" alt="User"><div class="user-info"><span class="user-name">Musharof</span><i class="fas fa-chevron-down"></i></div></div>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="page-header mb-4"><h1 class="page-title">SaaS Metrics</h1><p class="page-subtitle">Monitor your subscription and performance</p></div>
+
+                <div class="row mb-4">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card"><div class="stat-header"><h6 class="stat-title">Total Subscribers</h6><span class="trend trend-up"><i class="fas fa-arrow-up"></i> +12%</span></div><div class="stat-body"><p class="stat-value">3,245</p><p class="stat-compare"><span class="text-muted">Active plans</span></p></div></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card"><div class="stat-header"><h6 class="stat-title">MRR</h6><span class="trend trend-up"><i class="fas fa-arrow-up"></i> +18%</span></div><div class="stat-body"><p class="stat-value">$145.2K</p><p class="stat-compare"><span class="text-muted">Monthly recurring</span></p></div></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card"><div class="stat-header"><h6 class="stat-title">Churn Rate</h6><span class="trend trend-down"><i class="fas fa-arrow-down"></i> -0.5%</span></div><div class="stat-body"><p class="stat-value">2.3%</p><p class="stat-compare"><span class="text-muted">This month</span></p></div></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card"><div class="stat-header"><h6 class="stat-title">CAC</h6><span class="trend trend-down"><i class="fas fa-arrow-down"></i> -8%</span></div><div class="stat-body"><p class="stat-value">$45.20</p><p class="stat-compare"><span class="text-muted">Customer acquisition</span></p></div></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="stat-box"><h5>Subscription Plans</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead><tr><th>Plan Name</th><th>Price</th><th>Active</th><th>MRR</th><th>Growth</th><th>Churn</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Starter</td><td>$29</td><td>1,245</td><td>$36,105</td><td>+25%</td><td><span class="badge bg-success">1.2%</span></td></tr>
+                                        <tr><td>Professional</td><td>$79</td><td>1,532</td><td>$121,028</td><td>+18%</td><td><span class="badge bg-warning">2.1%</span></td></tr>
+                                        <tr><td>Enterprise</td><td>$299</td><td>468</td><td>$139,932</td><td>+12%</td><td><span class="badge bg-info">0.8%</span></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

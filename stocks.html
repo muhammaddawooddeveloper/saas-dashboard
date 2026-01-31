@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks - SaaS Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+         <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>TailAdmin</span>
+                </div>
+                <button class="sidebar-toggle d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-menu">
+                    <h6 class="menu-title">MENU</h6>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-th"></i></span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="ecommerce.html">eCommerce</a></li>
+                                <li><a href="analytics.html">Analytics</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="marketing.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                                <span class="text">Marketing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="crm.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-users"></i></span>
+                                <span class="text">CRM</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="stocks.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                                <span class="text">Stocks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="saas.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-cloud"></i></span>
+                                <span class="text">SaaS</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="logistics.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-truck"></i></span>
+                                <span class="text">Logistics</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ai-assistant.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-brain"></i></span>
+                                <span class="text">AI Assistant</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ecommerce-advanced.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="text">E-commerce</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calendar.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-calendar"></i></span>
+                                <span class="text">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="user-profile.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-user"></i></span>
+                                <span class="text">User Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle d-lg-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search stocks..." class="form-control">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">2</span>
+                    </button>
+                    <div class="user-profile">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="User">
+                        <div class="user-info">
+                            <span class="user-name">Musharof</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <div class="page-header mb-4">
+                    <h1 class="page-title">Stocks</h1>
+                    <p class="page-subtitle">Manage your inventory and stock levels</p>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="row mb-4">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Total Inventory</h6>
+                                <span class="trend trend-up"><i class="fas fa-arrow-up"></i> +8%</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">45,230</p>
+                                <p class="stat-compare"><span class="text-muted">Items in stock</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Low Stock Items</h6>
+                                <span class="trend trend-down"><i class="fas fa-arrow-down"></i> -3</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">12</p>
+                                <p class="stat-compare"><span class="text-muted">Need reorder</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Warehouse Value</h6>
+                                <span class="trend trend-up"><i class="fas fa-arrow-up"></i> +12%</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">$542.8K</p>
+                                <p class="stat-compare"><span class="text-muted">Total inventory</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Stock Turnover</h6>
+                                <span class="trend trend-up"><i class="fas fa-arrow-up"></i> +5%</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">4.2x</p>
+                                <p class="stat-compare"><span class="text-muted">Per quarter</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inventory Table -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="stat-box">
+                            <h5>Product Inventory</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>SKU</th>
+                                            <th>Product Name</th>
+                                            <th>Category</th>
+                                            <th>In Stock</th>
+                                            <th>Reorder Level</th>
+                                            <th>Unit Price</th>
+                                            <th>Total Value</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>SKU-001</td>
+                                            <td>Wireless Headphones</td>
+                                            <td>Electronics</td>
+                                            <td>1,245</td>
+                                            <td>500</td>
+                                            <td>$129.99</td>
+                                            <td>$161,738.55</td>
+                                            <td><span class="badge bg-success">In Stock</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SKU-002</td>
+                                            <td>USB-C Cables</td>
+                                            <td>Accessories</td>
+                                            <td>342</td>
+                                            <td>200</td>
+                                            <td>$24.99</td>
+                                            <td>$8,546.58</td>
+                                            <td><span class="badge bg-warning">Low Stock</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SKU-003</td>
+                                            <td>Phone Case Bundle</td>
+                                            <td>Accessories</td>
+                                            <td>580</td>
+                                            <td>300</td>
+                                            <td>$89.99</td>
+                                            <td>$52,194.20</td>
+                                            <td><span class="badge bg-success">In Stock</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SKU-004</td>
+                                            <td>Laptop Stand</td>
+                                            <td>Office</td>
+                                            <td>89</td>
+                                            <td>100</td>
+                                            <td>$49.99</td>
+                                            <td>$4,449.11</td>
+                                            <td><span class="badge bg-danger">Out of Stock</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SKU-005</td>
+                                            <td>Mechanical Keyboard</td>
+                                            <td>Electronics</td>
+                                            <td>421</td>
+                                            <td>250</td>
+                                            <td>$199.99</td>
+                                            <td>$84,195.79</td>
+                                            <td><span class="badge bg-success">In Stock</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stock Status -->
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <div class="stat-box">
+                            <h5>Stock Status Overview</h5>
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <i class="fas fa-check-circle" style="color: #10B981;"></i>
+                                    <span>In Stock Items</span>
+                                    <small>24 products</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-exclamation-circle" style="color: #F59E0B;"></i>
+                                    <span>Low Stock Items</span>
+                                    <small>5 products</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-times-circle" style="color: #EF4444;"></i>
+                                    <span>Out of Stock</span>
+                                    <small>3 products</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-box"></i>
+                                    <span>Pending Orders</span>
+                                    <small>8 orders</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="stat-box">
+                            <h5>Top Categories</h5>
+                            <ul class="product-list">
+                                <li class="product-item">
+                                    <span>Electronics</span>
+                                    <span class="product-sales">8,450 units</span>
+                                </li>
+                                <li class="product-item">
+                                    <span>Accessories</span>
+                                    <span class="product-sales">6,230 units</span>
+                                </li>
+                                <li class="product-item">
+                                    <span>Office</span>
+                                    <span class="product-sales">4,120 units</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

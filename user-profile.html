@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - SaaS Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+         <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>TailAdmin</span>
+                </div>
+                <button class="sidebar-toggle d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-menu">
+                    <h6 class="menu-title">MENU</h6>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-th"></i></span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="ecommerce.html">eCommerce</a></li>
+                                <li><a href="analytics.html">Analytics</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="marketing.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                                <span class="text">Marketing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="crm.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-users"></i></span>
+                                <span class="text">CRM</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="stocks.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                                <span class="text">Stocks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="saas.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-cloud"></i></span>
+                                <span class="text">SaaS</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="logistics.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-truck"></i></span>
+                                <span class="text">Logistics</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ai-assistant.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-brain"></i></span>
+                                <span class="text">AI Assistant</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ecommerce-advanced.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="text">E-commerce</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calendar.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-calendar"></i></span>
+                                <span class="text">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="user-profile.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-user"></i></span>
+                                <span class="text">User Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle d-lg-none"><i class="fas fa-bars"></i></button>
+                    <div class="search-box"><input type="text" placeholder="Search..." class="form-control"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="header-right">
+                    <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                    <button class="notification-btn"><i class="fas fa-bell"></i><span class="notification-badge">1</span></button>
+                    <div class="user-profile">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="User">
+                        <div class="user-info"><span class="user-name">Musharof</span><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="page-header mb-4"><h1 class="page-title">User Profile</h1><p class="page-subtitle">Manage your account and preferences</p></div>
+
+                <!-- Profile Card -->
+                <div class="row mb-4">
+                    <div class="col-lg-4 mb-3">
+                        <div class="stat-box text-center">
+                            <img src="https://i.pravatar.cc/150?img=12" alt="User" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 20px; border: 3px solid var(--primary-color);">
+                            <h5>Musharof Chowdhury</h5>
+                            <p class="text-muted">Admin User</p>
+                            <div class="mt-3">
+                                <button class="btn btn-primary btn-sm me-2">Edit Profile</button>
+                                <button class="btn btn-secondary btn-sm">Change Password</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="stat-box">
+                            <h5>Personal Information</h5>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" value="Musharof Chowdhury" disabled>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" value="musharof@example.com" disabled>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Phone</label>
+                                    <input type="text" class="form-control" value="+1-234-567-8900" disabled>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Location</label>
+                                    <input type="text" class="form-control" value="San Francisco, CA" disabled>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label class="form-label">Bio</label>
+                                    <textarea class="form-control" rows="3" disabled>Passionate about web design and development. Technology enthusiast with expertise in dashboard design.</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account Settings -->
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        <div class="stat-box">
+                            <h5>Account Settings</h5>
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Two-Factor Authentication</span>
+                                    <small><span class="badge bg-success">Enabled</span></small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Account Visibility</span>
+                                    <small><span class="badge bg-info">Public</span></small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email Notifications</span>
+                                    <small><span class="badge bg-success">On</span></small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-moon"></i>
+                                    <span>Dark Mode</span>
+                                    <small><span class="badge bg-secondary">Off</span></small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-3">
+                        <div class="stat-box">
+                            <h5>Activity Summary</h5>
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Member Since</span>
+                                    <small>January 15, 2024</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Last Login</span>
+                                    <small>Today 10:30 AM</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Account Status</span>
+                                    <small><span class="badge bg-success">Active</span></small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>Account Tier</span>
+                                    <small><span class="badge bg-warning">Pro</span></small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="stat-box">
+                            <h5>Recent Activity</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead><tr><th>Activity</th><th>Description</th><th>IP Address</th><th>Date & Time</th></tr></thead>
+                                    <tbody>
+                                        <tr><td><i class="fas fa-sign-in-alt" style="color: #10B981;"></i> Login</td><td>Successful login from desktop</td><td>192.168.1.1</td><td>Today 10:30 AM</td></tr>
+                                        <tr><td><i class="fas fa-edit" style="color: #3B82F6;"></i> Update</td><td>Updated profile information</td><td>192.168.1.1</td><td>Yesterday 3:45 PM</td></tr>
+                                        <tr><td><i class="fas fa-key" style="color: #F59E0B;"></i> Password</td><td>Password changed</td><td>192.168.1.1</td><td>Jan 18, 2:20 PM</td></tr>
+                                        <tr><td><i class="fas fa-sign-in-alt" style="color: #10B981;"></i> Login</td><td>Successful login from mobile</td><td>192.168.1.2</td><td>Jan 17, 9:15 AM</td></tr>
+                                        <tr><td><i class="fas fa-download" style="color: #5B21B6;"></i> Export</td><td>Downloaded account data</td><td>192.168.1.1</td><td>Jan 16, 11:00 AM</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

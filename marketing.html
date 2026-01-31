@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing - SaaS Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+     <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>TailAdmin</span>
+                </div>
+                <button class="sidebar-toggle d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-menu">
+                    <h6 class="menu-title">MENU</h6>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-th"></i></span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="ecommerce.html">eCommerce</a></li>
+                                <li><a href="analytics.html">Analytics</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="marketing.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                                <span class="text">Marketing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="crm.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-users"></i></span>
+                                <span class="text">CRM</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="stocks.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                                <span class="text">Stocks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="saas.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-cloud"></i></span>
+                                <span class="text">SaaS</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="logistics.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-truck"></i></span>
+                                <span class="text">Logistics</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ai-assistant.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-brain"></i></span>
+                                <span class="text">AI Assistant</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ecommerce-advanced.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="text">E-commerce</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calendar.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-calendar"></i></span>
+                                <span class="text">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="user-profile.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-user"></i></span>
+                                <span class="text">User Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle d-lg-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search campaigns..." class="form-control">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">1</span>
+                    </button>
+                    <div class="user-profile">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="User">
+                        <div class="user-info">
+                            <span class="user-name">Musharof</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <div class="page-header mb-4">
+                    <h1 class="page-title">Marketing</h1>
+                    <p class="page-subtitle">Manage your marketing campaigns and promotions</p>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="row mb-4">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Active Campaigns</h6>
+                                <span class="trend trend-up"><i class="fas fa-arrow-up"></i> +3</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">12</p>
+                                <p class="stat-compare"><span class="text-muted">Total running</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Email Subscribers</h6>
+                                <span class="trend trend-up"><i class="fas fa-arrow-up"></i> +450</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">28.4K</p>
+                                <p class="stat-compare"><span class="text-muted">This month</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Avg Click Rate</h6>
+                                <span class="trend trend-up"><i class="fas fa-arrow-up"></i> +2.5%</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">4.8%</p>
+                                <p class="stat-compare"><span class="text-muted">Vs last month</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">ROI</h6>
+                                <span class="trend trend-up"><i class="fas fa-arrow-up"></i> +18%</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">320%</p>
+                                <p class="stat-compare"><span class="text-muted">This quarter</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campaigns Table -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="stat-box">
+                            <h5>Campaign Performance</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Campaign Name</th>
+                                            <th>Type</th>
+                                            <th>Budget</th>
+                                            <th>Spent</th>
+                                            <th>Impressions</th>
+                                            <th>Clicks</th>
+                                            <th>CTR</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Summer Sale 2026</td>
+                                            <td>Email</td>
+                                            <td>$5,000</td>
+                                            <td>$3,200</td>
+                                            <td>125,400</td>
+                                            <td>6,270</td>
+                                            <td>5.0%</td>
+                                            <td><span class="badge bg-success">Active</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>New Product Launch</td>
+                                            <td>Social Media</td>
+                                            <td>$8,000</td>
+                                            <td>$7,850</td>
+                                            <td>245,600</td>
+                                            <td>9,824</td>
+                                            <td>4.0%</td>
+                                            <td><span class="badge bg-success">Active</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Black Friday Promo</td>
+                                            <td>PPC</td>
+                                            <td>$3,500</td>
+                                            <td>$3,500</td>
+                                            <td>89,250</td>
+                                            <td>5,355</td>
+                                            <td>6.0%</td>
+                                            <td><span class="badge bg-warning">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Retargeting Campaign</td>
+                                            <td>Display Ads</td>
+                                            <td>$2,000</td>
+                                            <td>$1,650</td>
+                                            <td>145,800</td>
+                                            <td>3,950</td>
+                                            <td>2.7%</td>
+                                            <td><span class="badge bg-success">Active</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Influencer Partnership</td>
+                                            <td>Influencer</td>
+                                            <td>$6,000</td>
+                                            <td>$6,000</td>
+                                            <td>520,000</td>
+                                            <td>26,000</td>
+                                            <td>5.0%</td>
+                                            <td><span class="badge bg-warning">Completed</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marketing Channels -->
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <div class="stat-box">
+                            <h5>Traffic by Channel</h5>
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email Marketing</span>
+                                    <small>35.2%</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-share-alt"></i>
+                                    <span>Social Media</span>
+                                    <small>28.5%</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-google"></i>
+                                    <span>Organic Search</span>
+                                    <small>22.1%</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-ad"></i>
+                                    <span>Paid Ads</span>
+                                    <small>14.2%</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="stat-box">
+                            <h5>Upcoming Events</h5>
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Valentine's Day Campaign</span>
+                                    <small>Feb 14</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Spring Collection Launch</span>
+                                    <small>Mar 21</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Mother's Day Promo</span>
+                                    <small>May 11</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Summer Clearance Sale</span>
+                                    <small>Jun 1</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

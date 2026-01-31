@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced eCommerce - SaaS Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+       <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>TailAdmin</span>
+                </div>
+                <button class="sidebar-toggle d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-menu">
+                    <h6 class="menu-title">MENU</h6>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-th"></i></span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="ecommerce.html">eCommerce</a></li>
+                                <li><a href="analytics.html">Analytics</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="marketing.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                                <span class="text">Marketing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="crm.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-users"></i></span>
+                                <span class="text">CRM</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="stocks.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                                <span class="text">Stocks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="saas.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-cloud"></i></span>
+                                <span class="text">SaaS</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="logistics.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-truck"></i></span>
+                                <span class="text">Logistics</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ai-assistant.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-brain"></i></span>
+                                <span class="text">AI Assistant</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="ecommerce-advanced.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="text">E-commerce</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calendar.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-calendar"></i></span>
+                                <span class="text">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="user-profile.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-user"></i></span>
+                                <span class="text">User Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle d-lg-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products & orders..." class="form-control">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">5</span>
+                    </button>
+                    <div class="user-profile">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="User">
+                        <div class="user-info">
+                            <span class="user-name">Musharof</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <div class="page-header mb-4">
+                    <h1 class="page-title">Advanced eCommerce</h1>
+                    <p class="page-subtitle">Complete store management and analytics</p>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="row mb-4">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Gross Revenue</h6>
+                                <span class="trend trend-up"><i class="fas fa-arrow-up"></i> +25%</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">$245.8K</p>
+                                <p class="stat-compare"><span class="text-muted">This month</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Total Orders</h6>
+                                <span class="trend trend-up"><i class="fas fa-arrow-up"></i> +18%</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">3,456</p>
+                                <p class="stat-compare"><span class="text-muted">Vs last month</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Avg Order Value</h6>
+                                <span class="trend trend-up"><i class="fas fa-arrow-up"></i> +12%</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">$71.12</p>
+                                <p class="stat-compare"><span class="text-muted">Per transaction</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <h6 class="stat-title">Return Rate</h6>
+                                <span class="trend trend-down"><i class="fas fa-arrow-down"></i> -2%</span>
+                            </div>
+                            <div class="stat-body">
+                                <p class="stat-value">3.2%</p>
+                                <p class="stat-compare"><span class="text-muted">Product returns</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sales by Category -->
+                <div class="row mb-4">
+                    <div class="col-lg-6">
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <div>
+                                    <h5 class="chart-title">Sales by Category</h5>
+                                    <p class="chart-subtitle">Category performance</p>
+                                </div>
+                            </div>
+                            <div class="chart-body">
+                                <canvas id="categoryChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <div>
+                                    <h5 class="chart-title">Payment Methods</h5>
+                                    <p class="chart-subtitle">Customer payment preferences</p>
+                                </div>
+                            </div>
+                            <div class="chart-body">
+                                <canvas id="paymentChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Selling Products -->
+                <div class="row mb-4">
+                    <div class="col-lg-12">
+                        <div class="stat-box">
+                            <h5>Top Selling Products</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Product Name</th>
+                                            <th>Category</th>
+                                            <th>Price</th>
+                                            <th>Units Sold</th>
+                                            <th>Revenue</th>
+                                            <th>Margin</th>
+                                            <th>Rating</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Premium Wireless Headphones</td>
+                                            <td>Electronics</td>
+                                            <td>$149.99</td>
+                                            <td>542</td>
+                                            <td>$81,294</td>
+                                            <td>38%</td>
+                                            <td><i class="fas fa-star" style="color: #F59E0B;"></i> 4.8</td>
+                                            <td><span class="badge bg-success">In Stock</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Smart Phone Stand</td>
+                                            <td>Accessories</td>
+                                            <td>$24.99</td>
+                                            <td>856</td>
+                                            <td>$21,391</td>
+                                            <td>45%</td>
+                                            <td><i class="fas fa-star" style="color: #F59E0B;"></i> 4.6</td>
+                                            <td><span class="badge bg-success">In Stock</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>USB-C Cable (3-Pack)</td>
+                                            <td>Accessories</td>
+                                            <td>$19.99</td>
+                                            <td>1,234</td>
+                                            <td>$24,639</td>
+                                            <td>52%</td>
+                                            <td><i class="fas fa-star" style="color: #F59E0B;"></i> 4.7</td>
+                                            <td><span class="badge bg-success">In Stock</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mechanical Keyboard RGB</td>
+                                            <td>Electronics</td>
+                                            <td>$189.99</td>
+                                            <td>389</td>
+                                            <td>$73,948</td>
+                                            <td>40%</td>
+                                            <td><i class="fas fa-star" style="color: #F59E0B;"></i> 4.9</td>
+                                            <td><span class="badge bg-success">In Stock</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Monitor Stand Adjustable</td>
+                                            <td>Office</td>
+                                            <td>$59.99</td>
+                                            <td>678</td>
+                                            <td>$40,693</td>
+                                            <td>42%</td>
+                                            <td><i class="fas fa-star" style="color: #F59E0B;"></i> 4.5</td>
+                                            <td><span class="badge bg-success">In Stock</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orders & Fulfillment -->
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        <div class="stat-box">
+                            <h5>Order Status Distribution</h5>
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <i class="fas fa-box"></i>
+                                    <span>Pending Orders</span>
+                                    <small>234 orders</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-truck"></i>
+                                    <span>Processing & Shipping</span>
+                                    <small>567 orders</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Delivered</span>
+                                    <small>2,345 orders</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-undo"></i>
+                                    <span>Returns</span>
+                                    <small>110 orders</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-times-circle"></i>
+                                    <span>Cancelled</span>
+                                    <small>45 orders</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-3">
+                        <div class="stat-box">
+                            <h5>Revenue Breakdown</h5>
+                            <ul class="product-list">
+                                <li class="product-item">
+                                    <span>Direct Sales</span>
+                                    <span class="product-sales">$145,200</span>
+                                </li>
+                                <li class="product-item">
+                                    <span>Affiliate Revenue</span>
+                                    <span class="product-sales">$42,500</span>
+                                </li>
+                                <li class="product-item">
+                                    <span>Subscription</span>
+                                    <span class="product-sales">$58,100</span>
+                                </li>
+                                <li class="product-item">
+                                    <span>Shipping Revenue</span>
+                                    <span class="product-sales">$12,000</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Transactions -->
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="stat-box">
+                            <h5>Recent Transactions</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Customer</th>
+                                            <th>Amount</th>
+                                            <th>Payment</th>
+                                            <th>Order Date</th>
+                                            <th>Delivery Est.</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#ORD-2026-5487</td>
+                                            <td>Alex Johnson</td>
+                                            <td>$245.99</td>
+                                            <td>Credit Card</td>
+                                            <td>Today 2:30 PM</td>
+                                            <td>Jan 24</td>
+                                            <td><span class="badge bg-info">Processing</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#ORD-2026-5486</td>
+                                            <td>Sarah Williams</td>
+                                            <td>$89.50</td>
+                                            <td>PayPal</td>
+                                            <td>Today 1:15 PM</td>
+                                            <td>Jan 23</td>
+                                            <td><span class="badge bg-success">Shipped</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#ORD-2026-5485</td>
+                                            <td>Michael Chen</td>
+                                            <td>$567.00</td>
+                                            <td>Credit Card</td>
+                                            <td>Today 12:45 PM</td>
+                                            <td>Jan 23</td>
+                                            <td><span class="badge bg-success">Delivered</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#ORD-2026-5484</td>
+                                            <td>Emma Davis</td>
+                                            <td>$134.75</td>
+                                            <td>Debit Card</td>
+                                            <td>Yesterday 8:20 PM</td>
+                                            <td>Jan 22</td>
+                                            <td><span class="badge bg-success">Delivered</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#ORD-2026-5483</td>
+                                            <td>James Wilson</td>
+                                            <td>$423.25</td>
+                                            <td>Apple Pay</td>
+                                            <td>Yesterday 6:10 PM</td>
+                                            <td>Jan 22</td>
+                                            <td><span class="badge bg-warning">Pending</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="ecommerce-advanced-script.js"></script>
+</body>
+</html>

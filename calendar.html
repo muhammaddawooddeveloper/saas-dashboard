@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - SaaS Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; }
+        .calendar-day { padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; text-align: center; min-height: 80px; cursor: pointer; transition: var(--transition); }
+        .calendar-day:hover { background: var(--light-bg); }
+        .calendar-day.other-month { color: var(--text-light); }
+        .calendar-day.today { background: var(--primary-color); color: white; font-weight: bold; }
+        .calendar-day.event { background: #E0E7FF; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+       <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>TailAdmin</span>
+                </div>
+                <button class="sidebar-toggle d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-menu">
+                    <h6 class="menu-title">MENU</h6>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-th"></i></span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="ecommerce.html">eCommerce</a></li>
+                                <li><a href="analytics.html">Analytics</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="marketing.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                                <span class="text">Marketing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="crm.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-users"></i></span>
+                                <span class="text">CRM</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="stocks.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                                <span class="text">Stocks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="saas.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-cloud"></i></span>
+                                <span class="text">SaaS</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="logistics.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-truck"></i></span>
+                                <span class="text">Logistics</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ai-assistant.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-brain"></i></span>
+                                <span class="text">AI Assistant</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ecommerce-advanced.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="text">E-commerce</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="calendar.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-calendar"></i></span>
+                                <span class="text">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="user-profile.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-user"></i></span>
+                                <span class="text">User Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle d-lg-none"><i class="fas fa-bars"></i></button>
+                    <div class="search-box"><input type="text" placeholder="Search events..." class="form-control"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="header-right">
+                    <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                    <button class="notification-btn"><i class="fas fa-bell"></i><span class="notification-badge">6</span></button>
+                    <div class="user-profile"><img src="https://i.pravatar.cc/150?img=12" alt="User"><div class="user-info"><span class="user-name">Musharof</span><i class="fas fa-chevron-down"></i></div></div>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="page-header mb-4"><h1 class="page-title">Calendar</h1><p class="page-subtitle">Manage your schedule and events</p></div>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="stat-box">
+                            <div class="calendar-header">
+                                <button class="btn btn-sm btn-light"><i class="fas fa-chevron-left"></i></button>
+                                <h5>January 2026</h5>
+                                <button class="btn btn-sm btn-light"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            <div class="calendar-grid">
+                                <div style="font-weight: bold; padding: 10px;">Sun</div>
+                                <div style="font-weight: bold; padding: 10px;">Mon</div>
+                                <div style="font-weight: bold; padding: 10px;">Tue</div>
+                                <div style="font-weight: bold; padding: 10px;">Wed</div>
+                                <div style="font-weight: bold; padding: 10px;">Thu</div>
+                                <div style="font-weight: bold; padding: 10px;">Fri</div>
+                                <div style="font-weight: bold; padding: 10px;">Sat</div>
+                                
+                                <div class="calendar-day other-month">28</div>
+                                <div class="calendar-day other-month">29</div>
+                                <div class="calendar-day other-month">30</div>
+                                <div class="calendar-day other-month">31</div>
+                                <div class="calendar-day">1</div>
+                                <div class="calendar-day">2</div>
+                                <div class="calendar-day">3</div>
+                                
+                                <div class="calendar-day">4</div>
+                                <div class="calendar-day">5</div>
+                                <div class="calendar-day">6</div>
+                                <div class="calendar-day">7</div>
+                                <div class="calendar-day">8</div>
+                                <div class="calendar-day">9</div>
+                                <div class="calendar-day">10</div>
+                                
+                                <div class="calendar-day">11</div>
+                                <div class="calendar-day">12</div>
+                                <div class="calendar-day">13</div>
+                                <div class="calendar-day">14</div>
+                                <div class="calendar-day">15</div>
+                                <div class="calendar-day">16</div>
+                                <div class="calendar-day">17</div>
+                                
+                                <div class="calendar-day">18</div>
+                                <div class="calendar-day">19</div>
+                                <div class="calendar-day">20</div>
+                                <div class="calendar-day today">21</div>
+                                <div class="calendar-day event">22</div>
+                                <div class="calendar-day">23</div>
+                                <div class="calendar-day">24</div>
+                                
+                                <div class="calendar-day">25</div>
+                                <div class="calendar-day">26</div>
+                                <div class="calendar-day event">27</div>
+                                <div class="calendar-day">28</div>
+                                <div class="calendar-day">29</div>
+                                <div class="calendar-day">30</div>
+                                <div class="calendar-day">31</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="stat-box">
+                            <h5>Upcoming Events</h5>
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>Team Meeting</span>
+                                    <small>Tomorrow 10:00 AM</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-video"></i>
+                                    <span>Client Call</span>
+                                    <small>Jan 23, 2:00 PM</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-presentation"></i>
+                                    <span>Presentation Review</span>
+                                    <small>Jan 25, 11:00 AM</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Quarterly Review</span>
+                                    <small>Jan 27, 3:00 PM</small>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="stat-box mt-3">
+                            <h5>Event Summary</h5>
+                            <ul class="activity-list">
+                                <li class="activity-item">
+                                    <i class="fas fa-circle" style="color: #5B21B6;"></i>
+                                    <span>Meetings</span>
+                                    <small>8 events</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-circle" style="color: #3B82F6;"></i>
+                                    <span>Calls</span>
+                                    <small>5 events</small>
+                                </li>
+                                <li class="activity-item">
+                                    <i class="fas fa-circle" style="color: #10B981;"></i>
+                                    <span>Deadlines</span>
+                                    <small>3 events</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

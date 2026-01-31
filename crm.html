@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM - SaaS Dashboard</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar --> <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>TailAdmin</span>
+                </div>
+                <button class="sidebar-toggle d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-menu">
+                    <h6 class="menu-title">MENU</h6>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-th"></i></span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="ecommerce.html">eCommerce</a></li>
+                                <li><a href="analytics.html">Analytics</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="marketing.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                                <span class="text">Marketing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="crm.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-users"></i></span>
+                                <span class="text">CRM</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="stocks.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                                <span class="text">Stocks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="saas.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-cloud"></i></span>
+                                <span class="text">SaaS</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="logistics.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-truck"></i></span>
+                                <span class="text">Logistics</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ai-assistant.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-brain"></i></span>
+                                <span class="text">AI Assistant</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ecommerce-advanced.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="text">E-commerce</span>
+                                <span class="badge">NEW</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="calendar.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-calendar"></i></span>
+                                <span class="text">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="user-profile.html" class="nav-link">
+                                <span class="icon"><i class="fas fa-user"></i></span>
+                                <span class="text">User Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+          <div class="header-left">
+            <button class="menu-toggle d-lg-none">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="search-box">
+              <input
+                type="text"
+                placeholder="Search customers..."
+                class="form-control"
+              />
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <div class="header-right">
+            <button class="theme-toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+            <button class="notification-btn">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">4</span>
+            </button>
+            <div class="user-profile">
+              <img src="https://i.pravatar.cc/150?img=12" alt="User" />
+              <div class="user-info">
+                <span class="user-name">Musharof</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Page Content -->
+        <div class="page-content">
+          <div class="page-header mb-4">
+            <h1 class="page-title">CRM</h1>
+            <p class="page-subtitle">Manage your customer relationships</p>
+          </div>
+
+          <!-- Stats Cards -->
+          <div class="row mb-4">
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h6 class="stat-title">Total Customers</h6>
+                  <span class="trend trend-up"
+                    ><i class="fas fa-arrow-up"></i> +45</span
+                  >
+                </div>
+                <div class="stat-body">
+                  <p class="stat-value">2,847</p>
+                  <p class="stat-compare">
+                    <span class="text-muted">Active accounts</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h6 class="stat-title">New Leads</h6>
+                  <span class="trend trend-up"
+                    ><i class="fas fa-arrow-up"></i> +12</span
+                  >
+                </div>
+                <div class="stat-body">
+                  <p class="stat-value">342</p>
+                  <p class="stat-compare">
+                    <span class="text-muted">This month</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h6 class="stat-title">Customer Retention</h6>
+                  <span class="trend trend-up"
+                    ><i class="fas fa-arrow-up"></i> +3%</span
+                  >
+                </div>
+                <div class="stat-body">
+                  <p class="stat-value">87.5%</p>
+                  <p class="stat-compare">
+                    <span class="text-muted">Vs last quarter</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h6 class="stat-title">LTV</h6>
+                  <span class="trend trend-up"
+                    ><i class="fas fa-arrow-up"></i> +15%</span
+                  >
+                </div>
+                <div class="stat-body">
+                  <p class="stat-value">$3,420</p>
+                  <p class="stat-compare">
+                    <span class="text-muted">Average lifetime</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customers Table -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="stat-box">
+                <h5>Recent Customers</h5>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Customer Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Company</th>
+                        <th>Total Spent</th>
+                        <th>Status</th>
+                        <th>Join Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>+1-234-567-8900</td>
+                        <td>Tech Corp</td>
+                        <td>$12,450</td>
+                        <td><span class="badge bg-success">Active</span></td>
+                        <td>Jan 2024</td>
+                      </tr>
+                      <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>+1-234-567-8901</td>
+                        <td>Marketing Pro</td>
+                        <td>$8,920</td>
+                        <td><span class="badge bg-success">Active</span></td>
+                        <td>Mar 2024</td>
+                      </tr>
+                      <tr>
+                        <td>Mike Johnson</td>
+                        <td>mike@example.com</td>
+                        <td>+1-234-567-8902</td>
+                        <td>Design Studio</td>
+                        <td>$5,670</td>
+                        <td><span class="badge bg-warning">Inactive</span></td>
+                        <td>Jun 2024</td>
+                      </tr>
+                      <tr>
+                        <td>Sarah Williams</td>
+                        <td>sarah@example.com</td>
+                        <td>+1-234-567-8903</td>
+                        <td>Finance Firm</td>
+                        <td>$15,230</td>
+                        <td><span class="badge bg-success">Active</span></td>
+                        <td>Feb 2024</td>
+                      </tr>
+                      <tr>
+                        <td>Tom Brown</td>
+                        <td>tom@example.com</td>
+                        <td>+1-234-567-8904</td>
+                        <td>E-commerce Ltd</td>
+                        <td>$9,450</td>
+                        <td><span class="badge bg-success">Active</span></td>
+                        <td>Apr 2024</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customer Segments -->
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <div class="stat-box">
+                <h5>Customer Segments</h5>
+                <ul class="activity-list">
+                  <li class="activity-item">
+                    <i class="fas fa-star"></i>
+                    <span>VIP Customers</span>
+                    <small>156 customers</small>
+                  </li>
+                  <li class="activity-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Regular Customers</span>
+                    <small>1,230 customers</small>
+                  </li>
+                  <li class="activity-item">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>At Risk</span>
+                    <small>89 customers</small>
+                  </li>
+                  <li class="activity-item">
+                    <i class="fas fa-times-circle"></i>
+                    <span>Inactive</span>
+                    <small>372 customers</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="stat-box">
+                <h5>Sales Pipeline</h5>
+                <ul class="activity-list">
+                  <li class="activity-item">
+                    <i class="fas fa-circle" style="color: #5b21b6"></i>
+                    <span>Leads</span>
+                    <small>$245,000</small>
+                  </li>
+                  <li class="activity-item">
+                    <i class="fas fa-circle" style="color: #3b82f6"></i>
+                    <span>Proposals</span>
+                    <small>$180,000</small>
+                  </li>
+                  <li class="activity-item">
+                    <i class="fas fa-circle" style="color: #10b981"></i>
+                    <span>Negotiations</span>
+                    <small>$120,000</small>
+                  </li>
+                  <li class="activity-item">
+                    <i class="fas fa-circle" style="color: #f59e0b"></i>
+                    <span>Won Deals</span>
+                    <small>$450,000</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
